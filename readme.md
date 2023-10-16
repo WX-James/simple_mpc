@@ -56,21 +56,39 @@ roslaunch mpc mpc_quadruped.launch
 基于二自由度自行车模型，控制输入为($v_x$, $\delta$),系统状态方程:
 
 $$
-\begin{bmatrix} \dot{p_x} \\\dot{p_y} \\\dot{\theta} \end{bmatrix} = 
-\begin{bmatrix} \cos{\theta} \\ \sin{\theta} \\ \frac{\tan{\delta}}{L} \end{bmatrix} v_x
+\begin{bmatrix} \dot{p_x} \\
+                \dot{p_y} \\
+                \dot{\theta}
+\end{bmatrix} = 
+\begin{bmatrix} \cos{\theta} \\
+                \sin{\theta} \\
+                \frac{\tan{\delta}}{L}
+\end{bmatrix} v_x
 $$
 ### 差速小车
 基于两轮差速小车模型，控制输入为($v_x$, $\omega$)，系统状态方程:
 
 $$
-\begin{bmatrix} \dot{p_x} \\\dot{p_y} \\\dot{\theta} \end{bmatrix} = 
-\begin{bmatrix} v_x \cos{\theta} \\ v_x \sin{\theta} \\ \omega \end{bmatrix} 
+\begin{bmatrix} \dot{p_x} \\
+                \dot{p_y} \\
+                \dot{\theta} 
+\end{bmatrix} = 
+\begin{bmatrix} v_x \cos{\theta} \\
+                v_x \sin{\theta} \\
+                \omega 
+\end{bmatrix} 
 $$
 
 ### 全向机器人
 控制输入为($v_x$, $v_y$, $\omega$)，系统状态方程：
 
 $$
-\begin{bmatrix} \dot{p_x} \\\dot{p_y} \\\dot{\theta} \end{bmatrix} = 
-\begin{bmatrix} v_x \cos{\theta} - v_y \sin{\theta} \\ v_x \sin{\theta} + v_y \cos{\theta} \\ \omega \end{bmatrix} 
+\begin{bmatrix} \dot{p_x} \\
+                \dot{p_y} \\
+                \dot{\theta} 
+\end{bmatrix} = 
+\begin{bmatrix} v_x \cos{\theta} - v_y \sin{\theta} \\
+                v_x \sin{\theta} + v_y \cos{\theta} \\
+                omega 
+\end{bmatrix} 
 $$
