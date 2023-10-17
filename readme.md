@@ -89,6 +89,6 @@ $$
 \end{bmatrix} = 
 \begin{bmatrix} v_x \cos{\theta} - v_y \sin{\theta} \\
                 v_x \sin{\theta} + v_y \cos{\theta} \\
-                omega 
+                \omega 
 \end{bmatrix} 
 $$
