@@ -1,5 +1,5 @@
 mpc:
-  mpc_type: 1                 # MPC类型 0: Ackman_MPC, 1: Differential_MPC, 2: Quadruped_MPC
+  mpc_type: 0                 # MPC类型 0: Ackman_MPC, 1: Differential_MPC, 2: Quadruped_MPC
   dt: 0.10                    # 离散时间，轨迹参考点的间隔时间和定时器计算时间
   predict_steps: 10           # 预测步长，
   L: 0.608                    # 轴距，阿克曼小车需要用
